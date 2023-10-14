@@ -69,7 +69,11 @@ header {
 .menu__container .menu li:hover > a::after {
     width: 100%;
 }
-
+.menu__container > i {
+    color: var(--main_color);
+    font-size: 3rem;
+    display: none;
+}
 
 .main {
     margin: 15rem 0;
@@ -131,7 +135,7 @@ font-size: 4.8rem;
 .rightContent__card > h2 {
     font-size: 2.4rem;
     margin-right: 10rem;
-    color: #FFF;
+    color: var(--main_color);
     margin-top: 3rem;
     transition: var(--transition);
 }
@@ -151,18 +155,77 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 100%;
 }
 .details h3 {
-    font-size: 1.4rem;
-    color: var(--main_color);
-    transition: var(--transition);
+    font-size: 1.6rem;
+    color: #FFF;
+    letter-spacing: .3rem;
 }
 .details p {
     font-size: 1.3rem;
     color: #FFF;
     margin-top: .5rem;
-}
-.main__rightContent:hover .rightContent__card .person .details h3 {
-    color: #FFF;
+    letter-spacing: .3rem;
 }
 .main__rightContent:hover .rightContent__card h2 {
-    color: var(--main_color);
+    color: #FFF;
 }
+
+/* === For Responsive === */
+/* === Small Device === */
+
+@media screen and (max-width:576px) {
+    .container {
+        width:90%;
+    }
+    .menu__container {
+        align-items: center;
+    }
+    .menu__container .menu {
+        display: none;
+    }
+    .menu__container > i {
+        display: inline-block;
+    }
+   .main .main__container {
+        grid-template-columns: 1fr;
+    }
+    .main__leftContent p {
+        font-size: 1.6rem;
+        margin-right: 5rem;
+    }
+    .main__rightContent .main__rightImg{
+        width: 100%;
+    }
+    .main__rightContent .main__rightImg img {
+        width: 100%;
+    }
+    .main__leftContent h1 {
+        font-size: 3.8rem;
+    }
+    .rightContent__card {
+        width: 30rem;
+        right: 1rem;
+        bottom: -7.5rem;
+    }
+    .rightContent__card > h2 {
+        font-size: 1.8rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+    .person > img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .details h3 {
+        font-size: 1.4rem;
+    }
+    .details p{
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+}
+
+/* === Small Device === */
+@media screen and(min-width:) {
+    
+}
+/* === For Responsive === */
