@@ -1,231 +1,306 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 :root {
-    font-size: 62.5%;
-    --main_color:#f95959;
-    --transition: all ease .5s
+  font-size: 62.5%;
+  --main_color: #f95959;
+  --transition: all ease 0.5s;
 }
 body {
-    background-color: #181719;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #181719;
+  font-family: "Montserrat", sans-serif;
 }
 header {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 .logo > a {
-    color: #181719;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #FFF;
-    border: 2px solid #FFF;
-    padding: 1.5rem 2rem;
-    transition: var(--transition);
+  color: #181719;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1.5rem 2rem;
+  transition: var(--transition);
 }
 .logo a:hover {
-    color: var(--main_color);
-    border: 2px solid var(--main_color);
-    border-radius: 1rem;
+  color: var(--main_color);
+  border: 2px solid var(--main_color);
+  border-radius: 1rem;
 }
 .container {
-    width: 140rem;
-    margin: 0 auto;
+  width: 140rem;
+  margin: 0 auto;
 }
 .menu__container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__container .menu {
-    display: flex;
-    gap: 8rem;
+  display: flex;
+  gap: 8rem;
 }
 .menu__container .menu li > a {
-    color: #181719;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #FFF;
+  color: #181719;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
 }
 .menu__container .menu li > .active::after {
-    width: 100%;
-
+  width: 100%;
 }
 .menu__container .menu li > a::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    display: inline-block;
-    background: var(--main_color);
-    bottom: 0;
-    left: 0;
-    transition: var(--transition);
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: inline-block;
+  background: var(--main_color);
+  bottom: 0;
+  left: 0;
+  transition: var(--transition);
 }
 .menu__container .menu li:hover > a::after {
-    width: 100%;
+  width: 100%;
 }
 .menu__container > i {
-    color: var(--main_color);
-    font-size: 3rem;
-    display: none;
+  color: var(--main_color);
+  font-size: 3rem;
+  display: none;
 }
 
 .main {
-    margin: 15rem 0;
+  margin: 15rem 0;
 }
 .main .main__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8rem;
 }
 .main__leftContent h1 {
-    color: #FFF;
-font-size: 4.8rem;
+  color: #fff;
+  font-size: 4.8rem;
 }
 .main__leftContent p {
-    font-size: 2.4rem;
-    color: #FFF;
-    font-weight: 400;
-    margin: 3rem 0;
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 3rem 0;
 }
-.leftContent__btn , a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--main_color);
-    transition: var(--transition);
-    display: inline-block;
+.leftContent__btn,
+a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--main_color);
+  transition: var(--transition);
+  display: inline-block;
 }
-.leftContent__btn:hover i{
-    margin-left: 2rem;
-    color: var(--main_color);
+.leftContent__btn:hover i {
+  margin-left: 2rem;
+  color: var(--main_color);
 }
 .leftContent__btn i {
-    margin-left: 1rem;
-    color: #fff;
-    transition: var(--transition);
+  margin-left: 1rem;
+  color: #fff;
+  transition: var(--transition);
 }
-.leftContent__btn:hover a{
-    color: #FFF;
+.leftContent__btn:hover a {
+  color: #fff;
 }
-.main__rightContent .main__rightImg{
-    width: 80rem;
-    overflow: hidden;
+.main__rightContent .main__rightImg {
+  width: 80rem;
+  overflow: hidden;
 }
 .main__rightContent .main__rightImg img {
-    width: 100%;
-    transition: var(--transition);
+  width: 100%;
+  transition: var(--transition);
 }
-.main__rightContent:hover .main__rightImg img{
-    transform: scale(1.5);
+.main__rightContent:hover .main__rightImg img {
+  transform: scale(1.5);
 }
 .main__rightContent {
-    position: relative;
+  position: relative;
 }
 .person {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 .rightContent__card > h2 {
-    font-size: 2.4rem;
-    margin-right: 10rem;
-    color: var(--main_color);
-    margin-top: 3rem;
-    transition: var(--transition);
+  font-size: 2.4rem;
+  margin-right: 10rem;
+  color: var(--main_color);
+  margin-top: 3rem;
+  transition: var(--transition);
 }
 .rightContent__card {
-    width: 45rem;
-    padding: 2rem;
-    background: #181719;
-    position: absolute;
-    bottom: -10.5rem;
-    right: 5rem;
+  width: 45rem;
+  padding: 2rem;
+  background: #181719;
+  position: absolute;
+  bottom: -10.5rem;
+  right: 5rem;
 
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .person > img {
-    width: 8.5rem;
-    height: 8.5rem;
-    border-radius: 100%;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 100%;
 }
 .details h3 {
-    font-size: 1.6rem;
-    color: #FFF;
-    letter-spacing: .3rem;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.3rem;
 }
 .details p {
-    font-size: 1.3rem;
-    color: #FFF;
-    margin-top: .5rem;
-    letter-spacing: .3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 .main__rightContent:hover .rightContent__card h2 {
-    color: #FFF;
+  color: #fff;
 }
 
 /* === For Responsive === */
 /* === Small Device === */
 
-@media screen and (max-width:576px) {
-    .container {
-        width:90%;
-    }
-    .menu__container {
-        align-items: center;
-    }
-    .menu__container .menu {
-        display: none;
-    }
-    .menu__container > i {
-        display: inline-block;
-    }
-   .main .main__container {
-        grid-template-columns: 1fr;
-    }
-    .main__leftContent p {
-        font-size: 1.6rem;
-        margin-right: 5rem;
-    }
-    .main__rightContent .main__rightImg{
-        width: 100%;
-    }
-    .main__rightContent .main__rightImg img {
-        width: 100%;
-    }
-    .main__leftContent h1 {
-        font-size: 3.8rem;
-    }
-    .rightContent__card {
-        width: 30rem;
-        right: 1rem;
-        bottom: -7.5rem;
-    }
-    .rightContent__card > h2 {
-        font-size: 1.8rem;
-        margin-right: 0rem;
-        margin-top: 1rem;
-    }
-    .person > img {
-        width: 6rem;
-        height: 6rem;
-    }
-    .details h3 {
-        font-size: 1.4rem;
-    }
-    .details p{
-        font-size: 1.2rem;
-        letter-spacing: 0;
-    }
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .menu__container {
+    align-items: center;
+  }
+  .menu__container .menu {
+    display: none;
+  }
+  .menu__container > i {
+    display: inline-block;
+  }
+  .main .main__container {
+    grid-template-columns: 1fr;
+  }
+  .main__leftContent p {
+    font-size: 1.6rem;
+    margin-right: 5rem;
+  }
+  .main__rightContent .main__rightImg {
+    width: 100%;
+  }
+  .main__rightContent .main__rightImg img {
+    width: 100%;
+  }
+  .main__leftContent h1 {
+    font-size: 3.8rem;
+  }
+  .rightContent__card {
+    width: 30rem;
+    right: 1rem;
+    bottom: -7.5rem;
+  }
+  .rightContent__card > h2 {
+    font-size: 1.8rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
+  .person > img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .details h3 {
+    font-size: 1.4rem;
+  }
+  .details p {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
 }
 
 /* === Small Device === */
-@media screen and(min-width:) {
-    
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .menu__container {
+    align-items: center;
+  }
+  .menu__container .menu {
+    display: none;
+  }
+  .menu__container > i {
+    display: inline-block;
+  }
+  .main .main__container {
+    grid-template-columns: 1fr;
+  }
+  .main__leftContent p {
+    font-size: 1.6rem;
+    margin-right: 5rem;
+  }
+  .main__rightContent .main__rightImg {
+    width: 100%;
+  }
+  .main__rightContent .main__rightImg img {
+    width: 100%;
+  }
+  .main__leftContent h1 {
+    font-size: 3.8rem;
+  }
+  .rightContent__card {
+    width: 30rem;
+    right: 1rem;
+    bottom: -7.5rem;
+  }
+  .rightContent__card > h2 {
+    font-size: 1.8rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
+  .person > img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .details h3 {
+    font-size: 1.4rem;
+  }
+  .details p {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    width: 90vw;
+  }
+  .main__rightContent .main__rightImg{
+    width: 50vw;
+  }
+  .rightContent__card {
+   width: 40vw;
+    right: 1rem;
+  }
+  .main__leftContent h1 {
+    font-size: 3.1rem;
+  }
+  .main__leftContent p {
+    font-size: 1.6rem;
+  }
+  .menu__container .menu li > a {
+    color: #181719;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .rightContent__card > h2 {
+    margin-right: 2rem;
+  }
 }
 /* === For Responsive === */
